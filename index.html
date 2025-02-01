@@ -17,17 +17,22 @@
 </head>
 <body class="sora ">
     <header class="bacground">
-        <nav class="  lg:container mx-auto pb-16" >
+        <nav class="sm: lg:container mx-auto pb-16" >
             <div class="flex justify-between my-3">
-                <div>
-                    <img src="c2-assets/logo-header.png" alt="">
+                <div class="flex justify-between">
+                    <div>
+                        <img src="c2-assets/logo-header.png" alt="">
+                    </div>
+                    <div class="ml-64">
+                        <h1 class=" text-green-500 text-3xl lg:hidden">☰</h1>
+                    </div>
                 </div>
-                <div class="flex items-center justify-center gap-5 text-xl">
+                <div class="hidden lg:flex items-center justify-center gap-5 text-xl">
                     <a href="">Product</a>
                     <a href="">Services</a>
                     <a href="">Contact us</a>
                 </div>
-                <div class="flex items-center justify-center gap-2 text-xl">
+                <div class="hidden lg:flex items-center justify-center gap-2 text-xl ">
                     <i class="fa-solid fa-magnifying-glass"></i>
                     <i class="fa-solid fa-cart-shopping"></i>
                     <button class="border border-[#179800] rounded px-4 py-1">Login</button>
@@ -38,7 +43,7 @@
         <section>
             <div class="mb-[100px]"> 
                 <div class="max-w-[890px] m-auto text-center">
-                    <div  class=" flex justify-center items-center text-6xl">
+                    <div  class=" lg:flex justify-center items-center text-6xl">
                         <h3>Freshness <span class="text-[#179800]">You Can <br>Count
                         </span> On, Prices You’ll Love!</h3>
                     </div>
@@ -54,22 +59,21 @@
     </header>
     <main>
         <section>
-            <div class="container mx-auto mb-[120px]">
+            <div class="lg:container mx-auto mb-[120px] sm:ml">
                 <div>
                     <h3 class="text-3xl font-semibold text-[#179800] mb-11">Services</h3>
                 </div>
-                <div class="flex gap-6">
-                    <div class="bg-[#EFEBE3] rounded-xl p-10">
+                <div class="grid lg:grid-cols-3 gap-5">
+                    <div class="bg-[#EFEBE3] rounded-xl p-10 my-5">
                         <div class="ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-6">
-                            <img src="c2-assets/service.png" alt="">
+                            <img src="c2-assets/service.png" >
                         </div>
-                        <div class="text-center ">
+                        <div class="text-center">
                             <h3 class="font-semibold mb-5">24/7 Services</h3>
-                            <p>
-                                "24/7 services ensure continuous availability, providing assistance and support anytime, day or night, for convenience."</p>
+                            <p>"24/7 services ensure continuous availability, providing assistance and support anytime, day or night, for convenience."</p>
                         </div>
                     </div>
-                    <div class="bg-[#EFEBE3] rounded-xl p-10">
+                    <div class="bg-[#EFEBE3] rounded-xl p-10 my-5">
                         <div class="ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-6">
                             <img src="c2-assets/delivery.png" alt="">
                         </div>
@@ -79,8 +83,8 @@
                                 "Fast delivery guarantees quick, reliable service, ensuring your products reach you promptly and in perfect condition."</p>
                         </div>
                     </div>
-                    <div class="bg-[#EFEBE3] rounded-xl p-10">
-                        <div class="ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-5">
+                    <div class="bg-[#EFEBE3] rounded-xl p-10 my-5">
+                        <div class=" lg:ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-6">
                             <img src="c2-assets/healthy.png" alt="">
                         </div>
                         <div class="text-center">
@@ -92,19 +96,21 @@
             </div>
         </section>
         <section>
-            <div class="bg-[#EFEBE3]">
+            <div class=" bg-[#EFEBE3] lg:p-36">
                 <div class="container mx-auto">
                     <div>
-                        <h3 class="text-[#179800] font-semibold text-2xl">Popular Products</h3>
+                        <h3 class="text-[#179800] font-semibold text-3xl mb-10">Popular Products</h3>
                     </div>
-                    <div class="flex justify-between">
-                        <div class="bg-[#F9DF8A]">
-                            <h3>30% off</h3>
-                            <p>Discover a world of treats,toys,and essentials handpicked for</p>
-                            <button>Buy Now</button>
+                    <div class=" lg:flex justify-between ">
+                        <div class="bg-gradient-to-b from-[#53DB3A] to-[#FFFFFF] p-20 rounded-xl h-[400px]">
+                            <h3 class="text-white text-3xl">30% off</h3>
+                            <p class="mt-3 mb-3">Discover a world of treats,toys,and <br>essentials handpicked for</p>
+                            <button class=" text-xl bg-white p-2 rounded-md">Buy Now</button>
+                          <div class="ml-32 mt-[-85px]">
                             <img src="c2-assets/vegetable-offer.png">
+                          </div>
                         </div>
-                        <div class="grid grid-cols-3 gap-7">
+                        <div class=" grid sm:grid-cols-2 lg:grid-cols-3 gap-7">
                             <div class="flex bg-white                       rounded-xl items-center justify-center h-[110px] w-[270px] gap-4">
                                 <div>
                                     <img src="c2-assets/onion.png" class="bg-[#EFEBE3] h-20 w-20 rounded-xl" alt="">
@@ -227,9 +233,84 @@
                 </div>
             </div>
         </section>
+        <section>
+            <div class="container mx-auto mt-[150px] mb-[90px]">
+                <div>
+                    <h3 class="font-semibold text-3xl text-[#179800] mb-[80px]">Arrival & Offers</h3>
+                </div>
+                <div class="flex justify-between"> 
+                     <div class="bg-[#115414] flex p-14 rounded-2xl justify-between h-[370px] w-[780px]">
+                        <div>
+                            <img src="c2-assets/dawat-logo.png">
+                            <button class="bg-[#63B76D] p-2 rounded-xl text-white mt-5 mb-5">
+                                Cook Exotic Dishes
+                            </button>
+                            <h2 class="text-white text-4xl">
+                                UP to <span class="font-bold ">20% OFF</span>
+                            </h2>
+                        </div>
+                        <div>
+                            <img src="c2-assets/dawat-mock-up.png">
+                        </div>
+                     </div>
+                      <div class="bg-[#102861] flex  p-10 rounded-2xl justify-between h-[370px] w-[580px]">
+                        <dvi>
+                            <img src="c2-assets/india-gate-logo.png">
+                            <button class="bg-[#2A4D97] p-2 text-white rounded-xl mb-4 mt-4">
+                                World’s No.1 Rice
+                            </button>
+                            <h2 class="text-white text-4xl">
+                                UP to <span class="font-bold">40% OFF</span>
+                            </h2>
+                        </dvi>
+                        <div>
+                            <img src="c2-assets/india-gate-mock-up.png">
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-
+        <div class="bg-[#179800] mt-96 relative">
+            <dvi>
+                <div class="bg-[#EFEBE3] container mx-auto flex justify-around items-center p-20 rounded-3xl relative -top-64">
+                    <div>
+                        <img src="c2-assets/vegetable-busket.png">
+                    </div>
+                    <div> 
+                        <h2 class="text-4xl font-semibold">Get Grocery News!</h2>
+                        <p class="text-xl mt-4 mb-4">Exclusive training tips, ticks, product deals and more</p>
+                        <input type="email" placeholder="Enter email....." class="h-[67px] w-[450px] rounded-2xl pl-5"><br>
+                        <button class="bg-[#179800] text-white font-semibold mt-4 p-3 rounded-xl pr-10 pl-10">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </dvi>
+            <div class="container mx-auto flex justify-between relative bottom-24">
+                 <div>
+                    <img src="c2-assets/logo-footer.png" alt="">
+                    <p class="text-white">Discover a world of treats, toys, and <br> essentials handpicked for your <br>furry friends</p>
+                 </div>
+                 <div class="grid font-semibold text-white text-xl">
+                    <a>Product</a>
+                    <a>Services</a>
+                    <a>Contact us</a>
+                 </div>
+                 <div>
+                    <div>
+                        <p class="text-white">Follow US</p>
+                    </div>
+                    <div class="text-white">
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                    </div>
+                 </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>
