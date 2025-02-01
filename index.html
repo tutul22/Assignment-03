@@ -1,19 +1,235 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assignment_03_Category_0002</title>
+    <!-- google fonts sora -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <!-- font awsome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <!-- tailwindcss and daisyui -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <header>
-
+<body class="sora ">
+    <header class="bacground">
+        <nav class="  lg:container mx-auto pb-16" >
+            <div class="flex justify-between my-3">
+                <div>
+                    <img src="c2-assets/logo-header.png" alt="">
+                </div>
+                <div class="flex items-center justify-center gap-5 text-xl">
+                    <a href="">Product</a>
+                    <a href="">Services</a>
+                    <a href="">Contact us</a>
+                </div>
+                <div class="flex items-center justify-center gap-2 text-xl">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-cart-shopping"></i>
+                    <button class="border border-[#179800] rounded px-4 py-1">Login</button>
+                    <button class="bg-[#179800] rounded px-3 py-1 text-white">Register</button>
+                </div>
+            </div>
+        </nav>
+        <section>
+            <div class="mb-[100px]"> 
+                <div class="max-w-[890px] m-auto text-center">
+                    <div  class=" flex justify-center items-center text-6xl">
+                        <h3>Freshness <span class="text-[#179800]">You Can <br>Count
+                        </span> On, Prices You’ll Love!</h3>
+                    </div>
+                    <div class=" flex justify-center items-center text-xl">
+                        <p>Shop your daily essentials at unbeata ble prices. From fresh produce to pantry staples, we’ve g ot you covered every day!</p>
+                    </div>
+                </div>
+                    <div class=" flex justify-center items-center ">
+                        <img src="c2-assets/hero-vegetables.png" alt="">
+                    </div>
+            </div>
+        </section>
     </header>
     <main>
-
+        <section>
+            <div class="container mx-auto mb-[120px]">
+                <div>
+                    <h3 class="text-3xl font-semibold text-[#179800] mb-11">Services</h3>
+                </div>
+                <div class="flex gap-6">
+                    <div class="bg-[#EFEBE3] rounded-xl p-10">
+                        <div class="ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-6">
+                            <img src="c2-assets/service.png" alt="">
+                        </div>
+                        <div class="text-center ">
+                            <h3 class="font-semibold mb-5">24/7 Services</h3>
+                            <p>
+                                "24/7 services ensure continuous availability, providing assistance and support anytime, day or night, for convenience."</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#EFEBE3] rounded-xl p-10">
+                        <div class="ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-6">
+                            <img src="c2-assets/delivery.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h3 class="font-semibold mb-5">Fast Delivery</h3>
+                            <p>
+                                "Fast delivery guarantees quick, reliable service, ensuring your products reach you promptly and in perfect condition."</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#EFEBE3] rounded-xl p-10">
+                        <div class="ml-[150px] bg-white p-5 w-32 h-32 rounded-full mb-5">
+                            <img src="c2-assets/healthy.png" alt="">
+                        </div>
+                        <div class="text-center">
+                            <h3  class="font-semibold mb-5">Healthy Products </h3>
+                            <p>"Healthy products are crafted with natural, nutritious ingredients to support overall well-being and a balanced lifestyle."</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="bg-[#EFEBE3]">
+                <div class="container mx-auto">
+                    <div>
+                        <h3 class="text-[#179800] font-semibold text-2xl">Popular Products</h3>
+                    </div>
+                    <div>
+                        <div>
+                            <h3>30% off</h3>
+                            <p>Discover a world of treats,toys,and essentials handpicked for</p>
+                            <button>Buy Now</button>
+                            <img src="c2-assets/vegetable-offer.png">
+                        </div>
+                        <div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Onion 1 KG</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/tomato.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Tomato 500  g</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/potato.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Potato 1 KG</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/tomato.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Tomato 500 g</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Onion 1 KG</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/tomato.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Tomato 500 g</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/onion.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Onion 1 KG</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/potato.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Potato 1 KG</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <img src="c2-assets/potato.png" alt="">
+                                </div>
+                                <div>
+                                    <div>
+                                        <i class="fa-solid fa-star text-amber-500"></i>
+                                        <h3>4.5</h3>
+                                    </div>
+                                    <h3>Potato 1 KG</h3>
+                                    <h3>39.99</h3>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        
+
     </footer>
 </body>
 </html>
